@@ -15,7 +15,8 @@ And then execute:
 
     $ bundle
 
-Then run: 
+Then run:
+
     $ spring binstub specjour
 
 ## Usage
