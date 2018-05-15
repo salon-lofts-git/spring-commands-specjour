@@ -1,9 +1,16 @@
-require "spring/commands/specjour/version"
-
 module Spring
   module Commands
-    module Specjour
-      # Your code goes here...
+    class Specjour
+      def env(*)
+        'test'
+      end
+
+      def exec_name
+        'specjour'
+      end
+
     end
+    
+    Spring.register_command 'specjour', Specjour.new
   end
 end
